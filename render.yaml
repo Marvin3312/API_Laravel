@@ -1,0 +1,35 @@
+services:
+  - type: web
+    name: laravel-api
+    env: php
+    plan: free
+    buildCommand: |
+      composer install
+      php artisan key:generate
+      php artisan config:cache
+      php artisan route:cache
+      php artisan view:cache
+    startCommand: "php artisan serve --host 0.0.0.0 --port $PORT"
+    envVars:
+      - key: APP_NAME
+        value: Laravel
+      - key: APP_ENV
+        value: production
+      - key: APP_DEBUG
+        value: false
+      - key: APP_URL
+        value: https://your-project-name.onrender.com
+      - key: APP_KEY
+        value: base64:Ypsr0uvwSS0C1CFq31bPzwtQ3X10qW/uPfADXbdFPh0=
+      - key: DB_CONNECTION
+        value: sqlsrv
+      - key: DB_HOST
+        value: svr-sql-ctezo.southcentralus.cloudapp.azure.com
+      - key: DB_PORT
+        value: 1433
+      - key: DB_DATABASE
+        value: db_DesaWebDevUMG
+      - key: DB_USERNAME
+        value: usr_DesaWebDevUMG
+      - key: DB_PASSWORD
+        value: !ngGuast@360
