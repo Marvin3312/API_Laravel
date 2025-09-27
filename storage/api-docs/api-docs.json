@@ -1,0 +1,138 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "API Laravel",
+        "description": "API de ejemplo con Laravel",
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/api/categorias": {
+            "get": {
+                "summary": "Mostrar todas las categorias",
+                "operationId": "1eb66ed8f584ed2ed2e83331bc8f204d",
+                "responses": {
+                    "200": {
+                        "description": "Muestra todas las categorias."
+                    }
+                }
+            }
+        },
+        "/api/categorias/{id}": {
+            "get": {
+                "summary": "Mostrar una categoria",
+                "operationId": "8495ec83617f9e80e45ae7cf09d61b6e",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Muestra una categoria."
+                    }
+                }
+            }
+        },
+        "/api/clientes": {
+            "get": {
+                "summary": "Mostrar todos los clientes",
+                "operationId": "60bc21d45e2304cca95575871c26ea3c",
+                "responses": {
+                    "200": {
+                        "description": "Muestra todos los clientes."
+                    }
+                }
+            }
+        },
+        "/api/clientes/{id}": {
+            "get": {
+                "summary": "Mostrar un cliente",
+                "operationId": "79e949e4ca46029b5eea3444815b7940",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Muestra un cliente."
+                    }
+                }
+            }
+        },
+        "/api/pedidos": {
+            "get": {
+                "summary": "Mostrar todos los pedidos",
+                "operationId": "9c5a998013f7d8fe3fdc301ad389dc86",
+                "responses": {
+                    "200": {
+                        "description": "Muestra todos los pedidos."
+                    }
+                }
+            }
+        },
+        "/api/pedidos/{id}": {
+            "get": {
+                "summary": "Mostrar un pedido",
+                "operationId": "970accabd8620de75cc733cbb6dc2c9c",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Muestra un pedido."
+                    }
+                }
+            }
+        },
+        "/api/productos": {
+            "get": {
+                "summary": "Mostrar todos los productos",
+                "operationId": "9d61e83eacac9d8b3ee20a9f823c32cb",
+                "responses": {
+                    "200": {
+                        "description": "Muestra todos los productos."
+                    }
+                }
+            }
+        },
+        "/api/productos/{id}": {
+            "get": {
+                "summary": "Mostrar un producto",
+                "operationId": "5caa7288b1a0188e4e8fd4cc7ccf798d",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Muestra un producto."
+                    }
+                }
+            }
+        }
+    }
+}
